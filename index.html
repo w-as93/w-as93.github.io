@@ -11,6 +11,9 @@
     <!-- Linking SwiperJS CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css" integrity="sha512-Go0fX6Al6Eab+N7QbSFHYBpwdcU2rbfONUcbRIS4z+9yzLlj7Xj8ao2BAOPE9Qtxdl+7iq04xzzcF4OTOWoUWg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="website icon" type="png" href="img/logo.png">
 </head>
@@ -36,11 +39,11 @@
 </header>
 <div class="fullpage">
     <section class="section home" id="home">
-    <div class="img-container">
+    <div class="img-container" data-aos="fade-left">
         <img src="img/Code.png" alt="">
     </div>
 
-    <div class="text-container">
+    <div class="text-container" data-aos="fade-right">
          <h1 class="name">Wasan Al-Shahrani</h1>
                 <h3 class="my-job">I,m a <span></span></h3>
                 <p class="about-me1">a Computer Science graduate with a strong passion for growth and innovation. I chose programming not just as a job, but as something I genuinely enjoy. I believe that continuous learning and curiosity are the key to excellence, and I’m always working to improve my skills.</p>
@@ -55,9 +58,11 @@
     </section>
 
     <section class="section about" id="about">
+        <div data-aos="fade-up">
         <h2 class="title">About</h2>
+        </div>
         <div class="container">
-            <div class="left-section">
+            <div class="left-section" data-aos="fade-right">
                 <div class="content">
                     <h4><span class="prime">Education:</span> Bachelor's Computer Science <span title="King Khalid University">KKU</span></h4>
                     <h4><span class="prime">Graduation Year :</span> 2025</h4>
@@ -68,7 +73,7 @@
             </div>
 
 
-            <div class="right-section">
+            <div class="right-section" data-aos="fade-left">
 
                 <div class="skill">
 
@@ -147,17 +152,21 @@
     </section>
 
     <section class="section credentials" id="credentials">
+        <div data-aos="fade-up">
         <h2 class="title">Credentials</h2>
+        </div>
 
         <div class="certificates">
+            <div data-aos="fade-right">
             <h3 class="main-title2">Certificates</h3>
+            </div>
 
-            <div class="container-courses swiper">
+            <div class="container-courses swiper" data-aos="fade-up">
                 <div class="card-wrapper">
                     <ul class="card-list swiper-wrapper">
                         <li class="card-item swiper-slide">
                             <a href="Certificates/MOSW.pdf" class="card-link" download="Mos.pdf">
-                                <img src="img/001-MOS-Word-060520.png" alt="Card Image" class="card-image">
+                                <img src="img/001-MOS-Access-060520.png" alt="Card Image" class="card-image">
                                 <p class="badge">MOS</p>
                                 <h2 class="card-title1">Microsoft Office Specialist: Word</h2>
                                 <button class='card-button bx bx-cloud-download' ></button>
@@ -174,9 +183,11 @@
         </div>
 
         <div class="courses">
+            <div data-aos="fade-right">
             <h3 class="main-title2">Courses</h3>
+            </div>
 
-            <div class="container-courses swiper">
+            <div class="container-courses swiper" data-aos="fade-up">
                 <div class="card-wrapper">
                     <ul class="card-list swiper-wrapper">
                         <li class="card-item swiper-slide">
@@ -225,9 +236,11 @@
     </section>
 
     <section class="section projects" id="projects">
+        <div data-aos="fade-up">
         <h2 class="title">Projects</h2>
+        </div>
 
-        <div class="container-courses swiper">
+        <div class="container-courses swiper" data-aos="fade-up">
             <div class="card-wrapper">
                 <ul class="card-list swiper-wrapper">
                     <li class="card-item swiper-slide">
@@ -292,11 +305,13 @@
     </section>
 
     <section class="section contact" id="contact">
+        <div data-aos="fade-up">
         <h2 class="title">Contact</h2>
+        </div>
 
         <div class="container2">
 
-            <div class="message">
+            <div class="message" data-aos="fade-right">
                 <h2>SEND ME YOUR MESSAGE</h2>
 
                 <form class="messageForm">
@@ -335,7 +350,7 @@
                 </form> 
             </div>
 
-            <div class="social">
+            <div class="social" data-aos="fade-left">
                 <div class="social-contact">
                     <div class="contact-container">
                         <i class='bx bx-phone' ></i>
@@ -369,6 +384,9 @@ new fullpage('#fullpage', {
         autoScrolling:true,
         navigation:true,
 })
+</script>
+<script>
+  AOS.init();
 </script>
 <script src="script.js"></script>
 </body>
