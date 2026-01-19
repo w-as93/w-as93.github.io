@@ -37,9 +37,9 @@ header {
     padding: 10px 100px;
 }
 
-.logo {
-    height: 90px;
-    border-radius: 50%;
+.logoName {
+    color: var(--blue-color);
+    font-family: var(--main-font);
 }
 
 .nav_link{
